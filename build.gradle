@@ -1,0 +1,27 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+buildscript {
+    ext.kotlin_version = '1.6.21'
+    repositories {
+        google()                           // Google's Maven repo for Android plugins
+        mavenCentral()                     // Maven Central replaces JCenter :contentReference[oaicite:1]{index=1}
+        maven { url "https://jitpack.io" } // JitPack for GitHub-hosted libraries like code-scanner v2.3.2 :contentReference[oaicite:2]{index=2}
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:8.10.0'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+allprojects {
+    repositories {
+        google()                           // Ensure AndroidX and Google libraries resolve
+        mavenCentral()                     // Primary community repo :contentReference[oaicite:3]{index=3}
+        maven { url "https://jitpack.io" } // Required for com.github.yuriy-budiyev:code-scanner :contentReference[oaicite:4]{index=4}
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

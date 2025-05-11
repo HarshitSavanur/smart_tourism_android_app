@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Smart Tourism App</string>
+    <string name="intent_tag_id">com.threeal.smarttourism.TAG_ID</string>
+    <string name="icon_back_description">Back</string>
+    <string name="server_address">http://localhost:8080/api/app/location/%s</string>
+    <string name="fetching_data">Fetching location data…</string>
+    <string name="fetching_data_success">Successfully fetched location data</string>
+    <string name="fetching_data_failed">Failed to fetch location data</string>
+    <string name="distance_info_not_found">Distance unknown</string>
+    <string name="distance_info_m">Distance %d M</string>
+    <string name="distance_info_km">Distance %d KM</string>
+    <string name="visitation_info_not_visited">Never visited</string>
+    <string name="visitation_info">Visited on %s</string>
+    <string name="location_info">%s, %s</string>
+    <string name="camera_permission_not_granted">Camera access not granted</string>
+    <string name="location_permission_not_granted">Location access not granted</string>
+    <string name="login">Login</string>
+    <string name="login_trying">Trying to login…</string>
+    <string name="tag_id_hint">Card ID</string>
+    <string name="tag_id_invalid">Invalid Card ID</string>
+    <string name="detect_tag_id">Card ID %s detected</string>
+    <string name="scanner_error">Card scanner error</string>
+</resources>
